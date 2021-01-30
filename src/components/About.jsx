@@ -11,7 +11,7 @@ export function About() {
              <LoggedOutNavbar />             
         </div>
         <AboutCollection>
-            <h3 style={{textAlign: "center", padding: "20px", width: "70%", margin:"0 auto 100px", lineHeight: "30px", fontFamily:'sans-serif', fontSize:'25px'}}>Fleets keep track of the daily expenses and reports made by the drivers, such as fuel expenses, fines, vehicle conditions and much more. </h3>
+            <h3 style={{textAlign: "center", padding: "20px", width: "70%", margin:"0 auto 100px", lineHeight: "30px", fontFamily:'sans-serif', fontSize:'25px',  color:"red"}}>Fleets keep track of the daily expenses and reports made by the drivers, such as fuel expenses, fines, vehicle conditions and much more. </h3>
             <Card3>
                 <AboutImage src="" alt=""/>
                 <AboutText>After Signing Up as Company, you will be directed to a profile page and just add the company’s details</AboutText>

@@ -54,9 +54,12 @@ export const HomeImage = styled.img`
 `
 
 export const CardText = styled.h3`
+  text-align: center;
   padding: 10px;
   font-family: sans-serif;
-  line-height: 30px;
+  line-height: 40px;
+  font-size: 23px;
+  color: skyblue;
   
 `
 
@@ -144,4 +147,5 @@ export const AboutText = styled.div`
  height:300px;
  font-size: 25px;
  line-height:1.4em; 
+ color: skyblue;
 `

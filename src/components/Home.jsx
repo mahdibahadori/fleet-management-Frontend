@@ -14,22 +14,22 @@ export function Home() {
         <HomeCollection>
             <Card1>
                 <HomeImage src="" alt=""/>
-                <CardText>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, et?</CardText>
+                <CardText>Daily expenses of each vechile </CardText>
             </Card1>
             <Card2>
                 <HomeImage src="" alt=""/>
-                <CardText>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, quo!</CardText>
+                <CardText>Manage drivers</CardText>
             </Card2>
             <Card1>
                 <HomeImage src="" alt=""/>
-                <CardText>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, nisi?</CardText>
+                <CardText>Keep track of the conditions of your Daily expenses of fleet.</CardText>
             </Card1>
             <Card2>
                 <HomeImage src="" alt=""/>
-                <CardText>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, maxime.</CardText>
+                <CardText>Get daily reports</CardText>
             </Card2>
         </HomeCollection> 
-        <h1 style={{textAlign: "center", fontFamily: "sans-serif", fontSize:'25px'}}>And Much More...</h1> 
+        <h1 style={{textAlign: "center", fontFamily: "sans-serif", fontSize:'25px', color:"red"}}>And Much More...</h1> 
         <NewLine>
             <h1 style={{textAlign: "center", fontFamily: "sans-serif", fontSize:"25px"}}>SIMPLE AND EASY TO USE, LEARN HOW IT WORKS</h1>
             <button style={{width:"200px", marginLeft:"20px", height:"50%", fontFamily:"sans-serif", fontSize:"30px"}}>
