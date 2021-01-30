@@ -1,6 +1,7 @@
 import React from 'react'
 import {Card3, Card4, AboutImage, AboutCollection, AboutText} from './styles/App'
 import {LoggedOutNavbar} from './LoggedOutNavbar'
+import {Link} from 'react-router-dom'
 // import {Footer} from './Footer'
 
 export function About() {
@@ -32,8 +33,18 @@ expenses, incidents as well vehicle conditions</AboutText>
                 <AboutImage src="" alt=""/>
                 <AboutText>On your dashboard you will be able to get reports for each vehicle, all the daily expenses, any mechanical faults or incidents.</AboutText>
             </Card3>
+        <button style={{width:"300px", 
+                        margin:"20px auto", 
+                        height:"100px", 
+                        fontFamily:"sans-serif", 
+                        fontSize:"30px", 
+                        display:"block",
+                        padding:'20px', 
+                        backgroundColor:"pink",
+                        borderRadius:"15px"}}>
+                <Link to='/sign-up' style={{textDecoration:"none"}}>Sign Up Here</Link>
+        </button>
         </AboutCollection>
-            
         </>
     );
 }

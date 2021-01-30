@@ -15,8 +15,9 @@ export const Logo = styled.div`
   width: 100px;
   font-family: sans-serif;
   text-align: center;
-  margin-left:200px;
-  font-size: 2rem;
+  margin-left:150px;
+  font-size: 2.5rem;
+  margin-top:0;
 `
 
 export const SmallLogo = styled.div`
@@ -43,7 +44,7 @@ export const NavLink = styled(Link)`
 `;
 
 export const NavLinks = styled.div`
-  margin-right: 250px;
+  margin-right: 150px;
 `
 
 export const HomeImage = styled.img`
