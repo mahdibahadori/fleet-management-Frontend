@@ -10,6 +10,56 @@ export const Nav = styled.nav`
   align-items: center;
 `;
 
+export const LoggedIn = styled.div`
+  display: flex;
+  width: 100%;  
+`
+
+export const LoggedInNav = styled.nav`
+  display:flex;
+  width:75%;
+  justify-content:space-between;
+  height: 15opx;
+  margin-top: 20px;
+`
+
+export const SideNavBar = styled.div`
+  display:flex;
+  flex-direction:column;
+  width:25%;
+  background-color: grey;
+  box-sizing: border-box;
+`
+
+export const SideNavBarHeader = styled.h1`
+  font-family: sans-serif;
+  color: cyan;
+  background-color: black;
+  padding-left: 20px;
+  width: 100%;
+  box-sizing: border-box;
+`
+
+export const SideNavLink = styled(Link)`
+  padding-left: 20px;
+  padding-bottom: 10px;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+  color: lightblue;
+`
+
+export const LogOutLink = styled(Link)`
+  text-align: center;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: cyan;
+`
+
+
 export const Logo = styled.div`
   display: inline-block;
   width: 100px;

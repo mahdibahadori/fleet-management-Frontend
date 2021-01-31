@@ -4,15 +4,17 @@ import {Home} from './Home'
 import {About} from './About'
 import {LogIn} from './SignIn'
 import {SignUp} from './SignUp'
+import {Company} from './Company'
 
 function App() { 
 
   return (  
     <Switch>
       <Route exact path="/" component={Home} />
+      <Route  path="/company" component={Company} />    
       <Route  path="/About" component={About} />
       <Route  path="/login" component={LogIn} />
-      <Route  path="/sign-up" component={SignUp} />       
+      <Route  path="/sign-up" component={SignUp} /> 
     </Switch>  
   );
 }

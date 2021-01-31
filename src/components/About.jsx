@@ -45,6 +45,7 @@ expenses, incidents as well vehicle conditions</AboutText>
                 <Link to='/sign-up' style={{textDecoration:"none"}}>Sign Up Here</Link>
         </button>
         </AboutCollection>
+        
         </>
     );
 }

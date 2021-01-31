@@ -14,7 +14,7 @@ export function Home() {
         <HomeCollection>
             <Card1>
                 <HomeImage src="" alt=""/>
-                <CardText>Daily expenses of each vechile </CardText>
+                <CardText>Daily expenses of each vehicle </CardText>
             </Card1>
             <Card2>
                 <HomeImage src="" alt=""/>

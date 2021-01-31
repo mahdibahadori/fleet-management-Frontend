@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { LoggedOutNavbar } from './LoggedOutNavbar'
 import {Form, FormGroup, FormLabel, FormInput, SubmitInput} from "./styles/Form"
+import {Footer} from './Footer'
 
 export function LogIn(history) {    
         // const [email, setEmail] = useState("");
@@ -61,6 +62,7 @@ export function LogIn(history) {
         </FormGroup>
         <SubmitInput id="submit" type="submit" value="Submit" />
       </Form>
+      <Footer />
     </>
     );
 }
