@@ -35,6 +35,11 @@ export const SubmitInput = styled.input`
     background-color: blue;
     font-size: 20px;
     color: white;
-    border-radius: 15px;
-    
+    border-radius: 15px;    
+`
+
+export const MainContent = styled.div`
+    margin-top: 61px;
+    width: 100%;
+    background-color: lightgrey;
 `

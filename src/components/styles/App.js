@@ -17,9 +17,9 @@ export const LoggedIn = styled.div`
 
 export const LoggedInNav = styled.nav`
   display:flex;
-  width:75%;
   justify-content:space-between;
-  height: 15opx;
+  width: 100%;
+  height: 150px;
   margin-top: 20px;
 `
 
@@ -141,8 +141,7 @@ export const NewLine = styled.div`
  export const AppFooter = styled.div`  
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
-  margin-top: 50px;
+  align-items: center;  
   height: 150px;
   background-color: lightblue;
 `
@@ -198,4 +197,16 @@ export const AboutText = styled.div`
  font-size: 25px;
  line-height:1.4em; 
  color: skyblue;
+`
+ export const CompanyPage = styled.div`
+  display: flex;
+  width: 100%; 
+  
+`
+
+export const Section = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  align-items: center;
 `

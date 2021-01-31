@@ -2,7 +2,7 @@ import React from 'react'
 import {Card3, Card4, AboutImage, AboutCollection, AboutText} from './styles/App'
 import {LoggedOutNavbar} from './LoggedOutNavbar'
 import {Link} from 'react-router-dom'
-// import {Footer} from './Footer'
+import {Footer} from './Footer'
 
 export function About() {
     return(
@@ -44,8 +44,8 @@ expenses, incidents as well vehicle conditions</AboutText>
                         borderRadius:"15px"}}>
                 <Link to='/sign-up' style={{textDecoration:"none"}}>Sign Up Here</Link>
         </button>
+        <Footer />
         </AboutCollection>
-        
         </>
     );
 }
