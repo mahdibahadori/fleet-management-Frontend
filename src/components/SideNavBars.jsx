@@ -28,9 +28,9 @@ export function SideNavBars() {
       <SideNavLink to="/company/:id/settings">Settings</SideNavLink>
 
       <SideNavBarHeader>Drivers</SideNavBarHeader>
-      <SideNavLink to="/company/:id/drivers">View all Drivers</SideNavLink>
-      <SideNavLink to="/EditDriver">Edit a driver</SideNavLink>
-      <SideNavLink to="/RemoveDriver">Remove a Driver</SideNavLink>
+      <SideNavLink to="ViewDrivers">View all Drivers</SideNavLink>
+      {/* <SideNavLink to="/EditDriver">Edit a driver</SideNavLink> */}
+      {/* <SideNavLink to="/RemoveDriver">Remove a Driver</SideNavLink> */}
 
       <SideNavBarHeader>Vehicles</SideNavBarHeader>
       <SideNavLink to="/ViewFleet">View Fleet</SideNavLink>

@@ -49,18 +49,18 @@ export function ViewVehicle() {
                 <DivText>Insurance Cost:</DivText>
               </Div5>
               <Div6>
-                <button style={{width:'200px', backgroundColor: "lightgreen", borderRadius: "10px", padding: "20px"}}>
-                  <Link to="/EditVehicle" style={{ textDecoration: "none", fontSize:'20px', color:'white'  }}>
+                <button style={{width:'200px', backgroundColor: "cornflowerblue", borderRadius: "20px", padding: "20px"}}>
+                  <Link to="/EditVehicle" style={{ textDecoration: "none", fontSize:'20px', color:'white', textShadow:"3px 2px 3px black" }}>
                     Edit
                   </Link>
                 </button>
-                <button style={{width:'200px', backgroundColor: "orange", borderRadius: "10px", padding: "20px"}}>
-                  <Link to="/DeleteVehicle" style={{ textDecoration: "none", fontSize:'20px', color:'white'}}>
+                <button style={{width:'200px', backgroundColor: "cornflowerblue", borderRadius: "20px", padding: "20px"}}>
+                  <Link to="/DeleteVehicle" style={{ textDecoration: "none", fontSize:'20px', color:'white', textShadow:"3px 2px 3px black" }}>
                     Delete
                   </Link>
                 </button>
-                <button style={{width:'200px', backgroundColor: "purple", borderRadius: "10px", padding: "20px"}}>
-                  <Link to="/VehicleReports" style={{ textDecoration: "none",  fontSize:'20px', color:'white'  }}>
+                <button style={{width:'200px', backgroundColor: "cornflowerblue", borderRadius: "20px", padding: "20px"}}>
+                  <Link to="/VehicleReports" style={{ textDecoration: "none",  fontSize:'20px', color:'white', textShadow:"3px 2px 3px black"   }}>
                     Reports
                   </Link>
                 </button>

@@ -6,11 +6,13 @@ import { SignUp } from "./SignUp";
 import { Company } from "./Company";
 import { EditCompany } from "./EditCompany";
 import { CreateCompany } from "./CreateCompany";
-import { EditDriver } from "./EditDriver";
-import {RemoveDriver} from './RemoveDriver'
+
 import {ViewFleet} from './ViewFleet'
 import {ViewVehicle} from './ViewVehicle'
 import {DeleteVehicle} from './DeleteVehicle'
+import {ViewDrivers} from './ViewDrivers'
+import {ViewDriver} from './ViewDriver'
+import {DeleteDriver} from './DeleteDriver'
 
 function App() {
   return (
@@ -21,12 +23,14 @@ function App() {
       <Route path="/About" component={About} />
       <Route path="/login" component={LogIn} />
       <Route path="/sign-up" component={SignUp} />
-      <Route path="/CreateCompany" component={CreateCompany} />
-      <Route path="/EditDriver" component={EditDriver} />
-      <Route path="/RemoveDriver" component={RemoveDriver} />
+      <Route path="/CreateCompany" component={CreateCompany} />     
+      
       <Route path="/ViewFleet" component={ViewFleet} />
       <Route path="/ViewVehicle" component={ViewVehicle} />
       <Route path="/DeleteVehicle" component={DeleteVehicle} />
+      <Route path="/ViewDrivers" component={ViewDrivers} />
+      <Route path="/ViewDriver" component={ViewDriver} />
+      <Route path="/DeleteDriver" component={DeleteDriver} />
     </Switch>
   );
 }

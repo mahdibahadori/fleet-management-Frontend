@@ -213,6 +213,7 @@ export const FleetDiv = styled.div`
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin: 0 auto;
+  overflow-y: scroll;
 `;
 
 export const Card = styled.div`
@@ -228,7 +229,22 @@ export const Card = styled.div`
   padding-top: 20px;
 `;
 
-export const CardContent = styled.div`
+
+export const Card5 = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 250px;
+  border: 1px solid grey;
+  border-radius: 30px;
+  margin: 30px 0;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding:20px 0px;
+`;
+
+
+export const CardContent1 = styled.div`
   width: 80%;
   text-align: left;
   margin: 0 auto;
@@ -236,6 +252,7 @@ export const CardContent = styled.div`
   font-size: 22px;
   margin-top: 10px;
 `;
+
 
 export const CardLinks = styled.div`
   display: flex;
@@ -248,7 +265,7 @@ export const CardLinks = styled.div`
 export const CardLink = styled(Link)`
   text-decoration: none;
   font-size: 20px;
-  color: cyan;
+  color: white;
 `;
 
 export const MainDiv = styled.div`

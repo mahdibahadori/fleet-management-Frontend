@@ -12,7 +12,7 @@ import { SideNavBars } from "./SideNavBars";
 import { CompanyPage, Section } from "./styles/App";
 import { Footer } from "./Footer";
 
-export function RemoveDriver({ history }) {
+export function DeleteDriver({ history }) {
   //   const [email, setEmail] = useState("");
   //   const [password, setPassword] = useState("");
 
