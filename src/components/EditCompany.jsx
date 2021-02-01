@@ -144,7 +144,7 @@ export function EditCompany() {
             // onChange={(e) => setPassword(e.target.value)}
           />
         </FormGroup>
-        <SubmitInput id="submit" type="submit" value="Submit" />
+        <SubmitInput id="submit" type="submit" value="Submit Changes" />
       </Form>
       </MainContent>
       </Section>         
