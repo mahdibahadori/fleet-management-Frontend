@@ -33,7 +33,7 @@ export function SideNavBars() {
       <SideNavLink to="/RemoveDriver">Remove a Driver</SideNavLink>
 
       <SideNavBarHeader>Vehicles</SideNavBarHeader>
-      <SideNavLink to="/company/:id/vehicles">View Fleet</SideNavLink>
+      <SideNavLink to="/ViewFleet">View Fleet</SideNavLink>
       <SideNavLink to="/company/:id/vehicles/new">Add a Vehicle</SideNavLink>
       <SideNavLink to="/company/:id/vehicles/:id/edit">
         Edit a Vehicle

@@ -206,3 +206,49 @@ export const Section = styled.div`
   width: 75%;
   align-items: center;
 `;
+
+export const FleetDiv = styled.div`
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0 auto;
+`
+
+export const Card = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: 350px;
+  border: 1px solid grey;
+  border-radius: 30px;
+  margin: 40px 0;
+  justify-content: flex-start;
+  align-items: flex-start;   
+  padding-top: 20px; 
+`
+
+export const CardContent = styled.div`
+  width: 80%;
+  text-align: left;
+  margin: 0 auto;
+  font-family: sans-serif;
+  font-size: 22px;
+  margin-top: 10px;
+`
+
+export const CardLinks = styled.div`
+  display: flex;
+  width: 90%;
+  height: 50px;
+  margin:40px auto;
+  justify-content: space-evenly;  
+`
+
+export const CardLink = styled(Link)`
+  text-decoration: none;
+  font-size: 20px;
+  color: cyan;
+`
+
+

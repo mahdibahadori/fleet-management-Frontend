@@ -8,6 +8,9 @@ import { EditCompany } from "./EditCompany";
 import { CreateCompany } from "./CreateCompany";
 import { EditDriver } from "./EditDriver";
 import {RemoveDriver} from './RemoveDriver'
+import {ViewFleet} from './ViewFleet'
+import {ViewVehicle} from './ViewVehicle'
+import {DeleteVehicle} from './DeleteVehicle'
 
 function App() {
   return (
@@ -21,6 +24,9 @@ function App() {
       <Route path="/CreateCompany" component={CreateCompany} />
       <Route path="/EditDriver" component={EditDriver} />
       <Route path="/RemoveDriver" component={RemoveDriver} />
+      <Route path="/ViewFleet" component={ViewFleet} />
+      <Route path="/ViewVehicle" component={ViewVehicle} />
+      <Route path="/DeleteVehicle" component={DeleteVehicle} />
     </Switch>
   );
 }
