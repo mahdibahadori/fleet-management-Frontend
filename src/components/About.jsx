@@ -37,12 +37,12 @@ expenses, incidents as well vehicle conditions</AboutText>
                         margin:"20px auto", 
                         height:"100px", 
                         fontFamily:"sans-serif", 
-                        fontSize:"30px", 
+                        fontSize:"20px", 
                         display:"block",
                         padding:'20px', 
                         backgroundColor:"pink",
                         borderRadius:"15px"}}>
-                <Link to='/sign-up' style={{textDecoration:"none"}}>Sign Up Here</Link>
+                <Link to='/CreateCompany' style={{textDecoration:"none"}}>Create your company</Link>
         </button>
         <Footer />
         </AboutCollection>

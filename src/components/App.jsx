@@ -6,6 +6,7 @@ import {LogIn} from './SignIn'
 import {SignUp} from './SignUp'
 import {Company} from './Company'
 import {EditCompany} from './EditCompany'
+import {CreateCompany} from './CreateCompany'
 
 
 function App() { 
@@ -18,6 +19,7 @@ function App() {
       <Route  path="/About" component={About} />
       <Route  path="/login" component={LogIn} />
       <Route  path="/sign-up" component={SignUp} /> 
+      <Route  path='/CreateCompany' component={CreateCompany} />
     </Switch>  
   );
 }
