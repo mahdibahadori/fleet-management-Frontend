@@ -43,3 +43,7 @@ export const MainContent = styled.div`
     width: 100%;
     background-color: lightgrey;
 `
+
+export const FormSelect = styled.select`
+   height: 50px;
+`

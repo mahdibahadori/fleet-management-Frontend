@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { LoggedOutNavbar } from "./LoggedOutNavbar";
-import {Form, FormGroup, FormLabel, FormInput, SubmitInput} from "./styles/Form"
+import {Form, FormGroup, FormLabel, FormInput, SubmitInput, FormSelect} from "./styles/Form"
 import {Footer} from './Footer'
 
 export function SignUp({ history }) {
@@ -43,12 +43,46 @@ export function SignUp({ history }) {
 //     }
 //   }
 
+const letters = ["A", "B", "C", "D"]
   return(
     <>
       <LoggedOutNavbar />
       <h1 style={{textAlign: "center", marginTop:'30px', fontFamily:"sans-serif", fontSize:"35px"}}>Create an account</h1>
       {/* {errMessage && <span>{errMessage}</span>} */}
       <Form>
+      <FormGroup>
+          <FormLabel htmlFor="FullName">Full Name</FormLabel>
+          <FormInput
+            type="text"
+            name="FullName"
+            id="FullName"
+            placeholder="John Smith"
+            // value={password}
+            // onChange={(e) => setPassword(e.target.value)}
+          />
+        </FormGroup> 
+        <FormGroup>
+          <FormLabel htmlFor="ContactNumber">Contact Number</FormLabel>
+          <FormInput
+            type="text"
+            name="ContactNumber"
+            id="ContactNumber"
+            placeholder="040 000 000"
+            // value={password}
+            // onChange={(e) => setPassword(e.target.value)}
+          />
+        </FormGroup> 
+        <FormGroup>
+          <FormLabel htmlFor="LicenseNumber">Drivers License Number</FormLabel>
+          <FormInput
+            type="text"
+            name="Drivers License Number"
+            id="Drivers License Number"
+            placeholder="1212121212"
+            // value={password}
+            // onChange={(e) => setPassword(e.target.value)}
+          />
+        </FormGroup>    
         <FormGroup>
           <FormLabel htmlFor="email">Email</FormLabel>
           <FormInput
@@ -58,7 +92,7 @@ export function SignUp({ history }) {
             placeholder="maicon@email.com"
             // value={email}
             // onChange={(e) => setEmail(e.target.value)}
-          />
+          />          
         </FormGroup>
         <FormGroup>
           <FormLabel htmlFor="password">Password</FormLabel>
@@ -70,10 +104,30 @@ export function SignUp({ history }) {
             // value={password}
             // onChange={(e) => setPassword(e.target.value)}
           />
+        </FormGroup>        
+        <FormGroup>
+          <FormLabel htmlFor="companyName">Company Name</FormLabel>
+          <FormSelect
+            type="text"
+            name="company"
+            id="companyName"           
+            // value={password}
+            // onChange={(e) => setPassword(e.target.value)}           
+          >
+           {letters.map((letter) => {            
+              return (
+                <option key={letters.indexOf(letter)} value={letter}>
+                  {letter}
+                </option>  
+              )              
+           })}
+          </FormSelect>
         </FormGroup>
+
         <SubmitInput id="submit" type="submit" value="Submit" />
       </Form>
       <Footer />
     </>
     );
+
 }
