@@ -56,15 +56,7 @@ export function ViewFleet() {
                   >
                     <CardLink to="./ViewVehicle">View</CardLink>
                   </button>
-                  <button
-                    style={{
-                      backgroundColor: "green",
-                      width: "120px",
-                      borderRadius: "10px",
-                    }}
-                  >
-                    <CardLink to="./DeleteVehicle">Remove</CardLink>
-                  </button>
+                  
                 </CardLinks>
               </Card>
               <Card>
@@ -84,15 +76,7 @@ export function ViewFleet() {
                   >
                     <CardLink to="./ViewVehicle">View</CardLink>
                   </button>
-                  <button
-                    style={{
-                      backgroundColor: "green",
-                      width: "120px",
-                      borderRadius: "10px",
-                    }}
-                  >
-                    <CardLink to="./DeleteVehicle">Remove</CardLink>
-                  </button>
+                  
                 </CardLinks>
               </Card>
               <Card>
@@ -112,15 +96,7 @@ export function ViewFleet() {
                   >
                     <CardLink to="./ViewVehicle">View</CardLink>
                   </button>
-                  <button
-                    style={{
-                      backgroundColor: "green",
-                      width: "120px",
-                      borderRadius: "10px",
-                    }}
-                  >
-                    <CardLink to="./DeleteVehicle">Remove</CardLink>
-                  </button>
+                  
                 </CardLinks>
               </Card>
               <Card>
@@ -140,15 +116,7 @@ export function ViewFleet() {
                   >
                     <CardLink to="./ViewVehicle">View</CardLink>
                   </button>
-                  <button
-                    style={{
-                      backgroundColor: "green",
-                      width: "120px",
-                      borderRadius: "10px",
-                    }}
-                  >
-                    <CardLink to="./DeleteVehicle">Remove</CardLink>
-                  </button>
+                  
                 </CardLinks>
               </Card>
               <Card>
@@ -168,15 +136,7 @@ export function ViewFleet() {
                   >
                     <CardLink to="./ViewVehicle">View</CardLink>
                   </button>
-                  <button
-                    style={{
-                      backgroundColor: "green",
-                      width: "120px",
-                      borderRadius: "10px",
-                    }}
-                  >
-                    <CardLink to="./DeleteVehicle">Remove</CardLink>
-                  </button>
+                  
                 </CardLinks>
               </Card>
               <Card>
@@ -196,15 +156,7 @@ export function ViewFleet() {
                   >
                     <CardLink to="./ViewVehicle">View</CardLink>
                   </button>
-                  <button
-                    style={{
-                      backgroundColor: "green",
-                      width: "120px",
-                      borderRadius: "10px",
-                    }}
-                  >
-                    <CardLink to="./DeleteVehicle">Remove</CardLink>
-                  </button>
+                  
                 </CardLinks>
               </Card>
             </FleetDiv>

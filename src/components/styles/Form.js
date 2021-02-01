@@ -37,7 +37,7 @@ export const SubmitInput = styled.input`
 export const MainContent = styled.div`
   margin-top: 61px;
   width: 100%;
-  background-color: lightgrey;
+  background-color: white;
 `;
 
 export const FormSelect = styled.select`

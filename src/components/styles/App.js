@@ -213,7 +213,7 @@ export const FleetDiv = styled.div`
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin: 0 auto;
-`
+`;
 
 export const Card = styled.div`
   display: flex;
@@ -224,9 +224,9 @@ export const Card = styled.div`
   border-radius: 30px;
   margin: 40px 0;
   justify-content: flex-start;
-  align-items: flex-start;   
-  padding-top: 20px; 
-`
+  align-items: flex-start;
+  padding-top: 20px;
+`;
 
 export const CardContent = styled.div`
   width: 80%;
@@ -235,20 +235,81 @@ export const CardContent = styled.div`
   font-family: sans-serif;
   font-size: 22px;
   margin-top: 10px;
-`
+`;
 
 export const CardLinks = styled.div`
   display: flex;
   width: 90%;
   height: 50px;
-  margin:40px auto;
-  justify-content: space-evenly;  
-`
+  margin: 40px auto;
+  justify-content: space-evenly;
+`;
 
 export const CardLink = styled(Link)`
   text-decoration: none;
   font-size: 20px;
   color: cyan;
-`
+`;
 
+export const MainDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+  width: 90%;
+  margin: 0 auto;
+  padding-left: 60px;
+  height: 700px;
+  box-sizing: border-box;  
+  border-radius: 20px;
+  background-color: lightgray;
+  box-shadow:  2px 2px 5px;
 
+`;
+
+export const Div1 = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1px solid gray;
+  margin-right:70px;
+  
+`;
+
+export const Div2 = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+`;
+
+export const Div3 = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+`;
+
+export const Div4 = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+`;
+
+export const Div5 = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+`;
+
+export const Div6 = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 50px;
+  
+`;
+
+export const DivText = styled.h2`
+  font-family: sans-serif;
+  color: blue;
+  margin-right: 80px;
+  font-weight: 300;
+`;
