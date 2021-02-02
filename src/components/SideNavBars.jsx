@@ -44,7 +44,7 @@ export function SideNavBars() {
       </SideNavLink>
 
       <SideNavBarHeader>Reports</SideNavBarHeader>
-      <SideNavLink to="/company/:id/reports">View Reports</SideNavLink>
+      <SideNavLink to="/AllReports">View Reports</SideNavLink>
 
       <SideNavBarHeader></SideNavBarHeader>
       <LogOutLink to="/">Log Out</LogOutLink>

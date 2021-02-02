@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-export const Form = styled.div`
+export const Form = styled.form`
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 60%;  
   margin: 70px auto;
   padding-top: 30px;
   box-shadow:   2px 3px 7px grey;
@@ -47,7 +47,7 @@ export const FormSelect = styled.select`
   height: 50px;
 `;
 
-export const Form1 = styled.div`
+export const Form1 = styled.form`
   display: flex;
   width: 90%;
   margin:0 auto;
@@ -74,4 +74,24 @@ export const SubmitInput1 = styled.input`
   border-radius: 15px;
 `;
 
+export const ReportForm = styled.form`
+  display: flex;
+  width: 90%;
+  justify-content:flex-start;
+  align-items:center;
+  height: 100px;
+  margin: 40px auto;
+`
+
+export const ReportFormGroup = styled.div`
+display: flex;
+flex-direction: column;
+width: 20%;
+margin: 20px auto;
+`;
+
+export const ReportFormInput = styled.input`
+ width: 100%;
+ height: 50px;
+`
 

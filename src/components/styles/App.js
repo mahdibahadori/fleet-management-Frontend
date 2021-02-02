@@ -346,10 +346,10 @@ margin: 0 auto;
 `
 
 export const Tracks = styled.div`
-  width: 95%;
+  width: 100vw;
   display: flex;
   justify-content: flex-start;
-  margin: 30px auto;
+  margin: 20px auto;
   box-shadow: 2px 3px 7px grey;
   height: 60px;
   padding: 10px;
@@ -360,4 +360,10 @@ export const Tracks = styled.div`
 export const TracksText = styled.h3`
 font-family: sans-serif;
 margin-right: 22%;
+`
+
+export const Div = styled.div`
+display:flex;
+margin-top:60px;
+width:100%;
 `

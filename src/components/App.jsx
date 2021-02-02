@@ -18,6 +18,7 @@ import { ViewDrivers } from "./ViewDrivers";
 import { ViewDriver } from "./ViewDriver";
 import { DriverTracks } from "./DriverTracks";
 import { DriverReports } from "./DriverReports";
+import { AllReports } from "./AllReports";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
       <Route path="/ViewDriver" component={ViewDriver} />
       <Route path="/DriverTracks" component={DriverTracks} />
       <Route path="/DriverReports" component={DriverReports} />
+      <Route path="/AllReports" component={AllReports} />
      
     </Switch>
   );
