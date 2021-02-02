@@ -43,3 +43,30 @@ export const MainContent = styled.div`
 export const FormSelect = styled.select`
   height: 50px;
 `;
+
+export const Form1 = styled.div`
+  display: flex;
+  width: 90%;
+  margin:0 auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+`
+
+export const FormGroup1 = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 20px auto;
+`;
+
+export const SubmitInput1 = styled.input`
+  height: 60px;
+  margin: 60px auto;
+  width: 25%;  
+  background-color: blue;
+  font-size: 25px;
+  color: white;
+  border-radius: 15px;
+`;
+
+

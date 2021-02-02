@@ -42,6 +42,7 @@ export function EditCompany() {
         <Section>
             <LoggedInNavBar />
         <MainContent>
+        <hr style={{ width: "95%" }} />
       <h1 style={{textAlign: "center", marginTop:'30px', fontFamily:"sans-serif", fontSize:"35px"}}>Update your company details</h1>
       {/* {errMessage && <span>{errMessage}</span>} */}
       <Form>
