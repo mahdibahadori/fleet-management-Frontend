@@ -227,6 +227,7 @@ export const Card = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   padding-top: 20px;
+  box-shadow:   1px 3px 10px grey;
 `;
 
 
@@ -241,6 +242,7 @@ export const Card5 = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   padding:20px 0px;
+  box-shadow:   1px 3px 10px grey;
 `;
 
 
@@ -276,12 +278,10 @@ export const MainDiv = styled.div`
   width: 90%;
   margin: 0 auto;
   padding-left: 60px;
-  height: 700px;
+  height: 650px;
   box-sizing: border-box;  
-  border-radius: 20px;
-  background-color: lightgray;
-  box-shadow:  2px 2px 5px;
-
+  border-radius: 20px;  
+  box-shadow:   2px 3px 7px grey;
 `;
 
 export const Div1 = styled.div`

@@ -140,7 +140,7 @@ export function CreateCompany() {
             // onChange={(e) => setPassword(e.target.value)}
           />
         </FormGroup>
-        <SubmitInput id="submit" type="submit" value="Submit" />
+        <SubmitInput id="submit" type="submit" value="Submit" style={{width:'20%'}}/>
       </Form>           
       <Footer />
     </>

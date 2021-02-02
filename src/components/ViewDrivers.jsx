@@ -11,6 +11,7 @@ import { LoggedInNavBar } from "./LoggedInNavBar";
 import { SideNavBars } from "./SideNavBars";
 import React, { useState } from "react";
 import { MainContent } from "./styles/Form";
+import {Footer} from './Footer'
 
 export function ViewDrivers() {
   return (
@@ -20,7 +21,7 @@ export function ViewDrivers() {
         <Section>
           <LoggedInNavBar />
           <MainContent>
-              <hr style={{width:"95%"}}/>
+              <hr style={{width:"95%", opacity:'.4'}}/>
             <h1
               style={{
                 textAlign: "center",
@@ -144,6 +145,7 @@ export function ViewDrivers() {
           </MainContent>
         </Section>
       </CompanyPage>
+      <Footer />
     </>
   );
 }

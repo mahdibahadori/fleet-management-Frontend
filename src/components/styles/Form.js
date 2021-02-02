@@ -3,14 +3,17 @@ import styled from "styled-components";
 export const Form = styled.div`
   display: flex;
   flex-direction: column;
-  width: 40%;
-  margin: 100px auto;
+  width: 60%;
+  margin: 70px auto;
+  padding-top: 30px;
+  box-shadow:   2px 3px 7px grey;
+  border-radius: 20px;
 `;
 
 export const FormGroup = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 70%;
   margin: 20px auto;
 `;
 
@@ -50,6 +53,8 @@ export const Form1 = styled.div`
   margin:0 auto;
   flex-wrap: wrap;
   justify-content: space-between;
+  border-radius: 20px;
+  box-shadow:   2px 3px 7px grey;
 `
 
 export const FormGroup1 = styled.div`

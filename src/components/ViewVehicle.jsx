@@ -25,6 +25,7 @@ export function ViewVehicle() {
         <Section>
           <LoggedInNavBar />
           <MainContent>
+          
             <MainDiv>
               <Div1>
                 <DivText>Fleet No: 1</DivText>

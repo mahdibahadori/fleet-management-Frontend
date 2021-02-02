@@ -48,7 +48,7 @@ export function AddVehicle() {
         <Section>
           <LoggedInNavBar />
           <MainContent>
-            <hr style={{ width: "95%" }} />
+            <hr style={{ width: "95%", opacity:".4" }} />
             <h1
               style={{
                 textAlign: "center",
