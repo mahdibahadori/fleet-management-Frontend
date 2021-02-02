@@ -35,9 +35,9 @@ export function SideNavBars() {
       <SideNavBarHeader>Vehicles</SideNavBarHeader>
       <SideNavLink to="/ViewFleet">View Fleet</SideNavLink>
       <SideNavLink to="/AddVehicle">Add a Vehicle</SideNavLink>
-      <SideNavLink to="/EditVehicle">
+      {/* <SideNavLink to="/EditVehicle">
         Edit a Vehicle
-      </SideNavLink>
+      </SideNavLink> */}
       
       <SideNavLink to="company/:id/assign">
         Assign Driver to Vehicle

@@ -12,10 +12,12 @@ import { ViewVehicle } from "./ViewVehicle";
 import { DeleteVehicle } from "./DeleteVehicle";
 import { AddVehicle } from "./AddVehicle";
 import { EditVehicle } from "./EditVehicle";
+import { VehicleReports } from "./VehicleReports";
 
 import { ViewDrivers } from "./ViewDrivers";
 import { ViewDriver } from "./ViewDriver";
-import { DeleteDriver } from "./DeleteDriver";
+import { DriverTracks } from "./DriverTracks";
+import { DriverReports } from "./DriverReports";
 
 function App() {
   return (
@@ -33,10 +35,13 @@ function App() {
       <Route path="/DeleteVehicle" component={DeleteVehicle} />
       <Route path="/AddVehicle" component={AddVehicle} />
       <Route path="/EditVehicle" component={EditVehicle} />
+      <Route path="/VehicleReports" component={VehicleReports} />
 
       <Route path="/ViewDrivers" component={ViewDrivers} />
       <Route path="/ViewDriver" component={ViewDriver} />
-      <Route path="/DeleteDriver" component={DeleteDriver} />
+      <Route path="/DriverTracks" component={DriverTracks} />
+      <Route path="/DriverReports" component={DriverReports} />
+     
     </Switch>
   );
 }

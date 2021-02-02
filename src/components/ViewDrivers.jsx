@@ -11,7 +11,7 @@ import { LoggedInNavBar } from "./LoggedInNavBar";
 import { SideNavBars } from "./SideNavBars";
 import React, { useState } from "react";
 import { MainContent } from "./styles/Form";
-import {Footer} from './Footer'
+import { Footer } from "./Footer";
 
 export function ViewDrivers() {
   return (
@@ -21,13 +21,13 @@ export function ViewDrivers() {
         <Section>
           <LoggedInNavBar />
           <MainContent>
-              <hr style={{width:"95%", opacity:'.4'}}/>
+            <hr style={{ width: "95%", opacity: ".4" }} />
             <h1
               style={{
                 textAlign: "center",
                 marginTop: "30px",
                 fontFamily: "sans-serif",
-                fontSize: "35px",                
+                fontSize: "35px",
               }}
             >
               View Drivers
@@ -41,13 +41,33 @@ export function ViewDrivers() {
                 <CardLinks>
                   <button
                     style={{
+                      backgroundColor: "orange",
+                      width: "120px",
+                      borderRadius: "10px",
+                      height: "50px",
+                    }}
+                  >
+                    <CardLink to="./DeleteDriver">Remove</CardLink>
+                  </button>
+                  <button
+                    style={{
                       backgroundColor: "lightgreen",
                       width: "120px",
                       borderRadius: "10px",
-                      height: '50px'
+                      height: "50px",
                     }}
                   >
-                    <CardLink to="/ViewDriver">View</CardLink>
+                    <CardLink to="./DriverTracks">Tracks</CardLink>
+                  </button>
+                  <button
+                    style={{
+                      backgroundColor: "lightgreen",
+                      width: "120px",
+                      borderRadius: "10px",
+                      height: "50px",
+                    }}
+                  >
+                    <CardLink to="./DriverReports">Reports</CardLink>
                   </button>
                 </CardLinks>
               </Card5>
@@ -59,13 +79,33 @@ export function ViewDrivers() {
                 <CardLinks>
                   <button
                     style={{
+                      backgroundColor: "orange",
+                      width: "120px",
+                      borderRadius: "10px",
+                      height: "50px",
+                    }}
+                  >
+                    <CardLink to="./DeleteDriver">Remove</CardLink>
+                  </button>
+                  <button
+                    style={{
                       backgroundColor: "lightgreen",
                       width: "120px",
                       borderRadius: "10px",
-                      height: '50px'
+                      height: "50px",
                     }}
                   >
-                    <CardLink to="./ViewDriver">View</CardLink>
+                    <CardLink to="./DriverTracks">Tracks</CardLink>
+                  </button>
+                  <button
+                    style={{
+                      backgroundColor: "lightgreen",
+                      width: "120px",
+                      borderRadius: "10px",
+                      height: "50px",
+                    }}
+                  >
+                    <CardLink to="./DriverReports">Reports</CardLink>
                   </button>
                 </CardLinks>
               </Card5>
@@ -77,13 +117,33 @@ export function ViewDrivers() {
                 <CardLinks>
                   <button
                     style={{
+                      backgroundColor: "orange",
+                      width: "120px",
+                      borderRadius: "10px",
+                      height: "50px",
+                    }}
+                  >
+                    <CardLink to="./DeleteDriver">Remove</CardLink>
+                  </button>
+                  <button
+                    style={{
                       backgroundColor: "lightgreen",
                       width: "120px",
                       borderRadius: "10px",
-                      height: '50px'
+                      height: "50px",
                     }}
                   >
-                    <CardLink to="./ViewDriver">View</CardLink>
+                    <CardLink to="./DriverTracks">Tracks</CardLink>
+                  </button>
+                  <button
+                    style={{
+                      backgroundColor: "lightgreen",
+                      width: "120px",
+                      borderRadius: "10px",
+                      height: "50px",
+                    }}
+                  >
+                    <CardLink to="./DriverReports">Reports</CardLink>
                   </button>
                 </CardLinks>
               </Card5>
@@ -95,13 +155,33 @@ export function ViewDrivers() {
                 <CardLinks>
                   <button
                     style={{
+                      backgroundColor: "orange",
+                      width: "120px",
+                      borderRadius: "10px",
+                      height: "50px",
+                    }}
+                  >
+                    <CardLink to="./DeleteDriver">Remove</CardLink>
+                  </button>
+                  <button
+                    style={{
                       backgroundColor: "lightgreen",
                       width: "120px",
                       borderRadius: "10px",
-                      height: '50px'
+                      height: "50px",
                     }}
                   >
-                    <CardLink to="./ViewDriver">View</CardLink>
+                    <CardLink to="./DriverTracks">Tracks</CardLink>
+                  </button>
+                  <button
+                    style={{
+                      backgroundColor: "lightgreen",
+                      width: "120px",
+                      borderRadius: "10px",
+                      height: "50px",
+                    }}
+                  >
+                    <CardLink to="./DriverReports">Reports</CardLink>
                   </button>
                 </CardLinks>
               </Card5>
@@ -113,13 +193,33 @@ export function ViewDrivers() {
                 <CardLinks>
                   <button
                     style={{
+                      backgroundColor: "orange",
+                      width: "120px",
+                      borderRadius: "10px",
+                      height: "50px",
+                    }}
+                  >
+                    <CardLink to="./DeleteDriver">Remove</CardLink>
+                  </button>
+                  <button
+                    style={{
                       backgroundColor: "lightgreen",
                       width: "120px",
                       borderRadius: "10px",
-                      height: '50px'
+                      height: "50px",
                     }}
                   >
-                    <CardLink to="./ViewDriver">View</CardLink>
+                    <CardLink to="./DriverTracks">Tracks</CardLink>
+                  </button>
+                  <button
+                    style={{
+                      backgroundColor: "lightgreen",
+                      width: "120px",
+                      borderRadius: "10px",
+                      height: "50px",
+                    }}
+                  >
+                    <CardLink to="./DriverReports">Reports</CardLink>
                   </button>
                 </CardLinks>
               </Card5>
@@ -131,13 +231,33 @@ export function ViewDrivers() {
                 <CardLinks>
                   <button
                     style={{
+                      backgroundColor: "orange",
+                      width: "120px",
+                      borderRadius: "10px",
+                      height: "50px",
+                    }}
+                  >
+                    <CardLink to="./DeleteDriver">Remove</CardLink>
+                  </button>
+                  <button
+                    style={{
                       backgroundColor: "lightgreen",
                       width: "120px",
                       borderRadius: "10px",
-                      height: '50px'
+                      height: "50px",
                     }}
                   >
-                    <CardLink to="./ViewDriver">View</CardLink>
+                    <CardLink to="./DriverTracks">Tracks</CardLink>
+                  </button>
+                  <button
+                    style={{
+                      backgroundColor: "lightgreen",
+                      width: "120px",
+                      borderRadius: "10px",
+                      height: "50px",
+                    }}
+                  >
+                    <CardLink to="./DriverReports">Reports</CardLink>
                   </button>
                 </CardLinks>
               </Card5>

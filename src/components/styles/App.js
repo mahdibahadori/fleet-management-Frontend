@@ -210,6 +210,8 @@ export const Section = styled.div`
 export const FleetDiv = styled.div`
   display: flex;
   width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin: 0 auto;
@@ -330,3 +332,32 @@ export const DivText = styled.h2`
   margin-right: 80px;
   font-weight: 300;
 `;
+
+export const TracksDiv = styled.div`
+width: 90%;
+height: 100vh;
+overflow-y: scroll;
+overflow-x: scroll;
+display: flex;
+flex-direction: column;
+align-items:flex-start;
+justify-content: flex-start;
+margin: 0 auto;
+`
+
+export const Tracks = styled.div`
+  width: 95%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 30px auto;
+  box-shadow: 2px 3px 7px grey;
+  height: 60px;
+  padding: 10px;
+  align-items:center;
+  border-radius: 10px;
+`
+
+export const TracksText = styled.h3`
+font-family: sans-serif;
+margin-right: 22%;
+`
