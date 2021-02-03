@@ -70,6 +70,7 @@ export function Home() {
             Here
           </Link>
         </button>
+        
       </NewLine>
       <Footer />
     </>

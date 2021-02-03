@@ -44,8 +44,8 @@ expenses, incidents as well vehicle conditions</AboutText>
                         borderRadius:"15px"}}>
                 <Link to='/CreateCompany' style={{textDecoration:"none"}}>Create your company</Link>
         </button>
-        <Footer />
         </AboutCollection>
+        <Footer />
         </>
     );
 }

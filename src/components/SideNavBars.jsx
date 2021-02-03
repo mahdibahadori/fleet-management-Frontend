@@ -47,7 +47,7 @@ export function SideNavBars() {
       <SideNavLink to="/AllReports">View Reports</SideNavLink>
 
       <SideNavBarHeader></SideNavBarHeader>
-      <LogOutLink to="/">Log Out</LogOutLink>
+      
     </SideNavBar>
   );
 }

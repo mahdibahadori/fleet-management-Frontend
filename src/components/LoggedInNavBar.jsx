@@ -1,7 +1,17 @@
 import { NavLink, NavLinks, Logo, LoggedIn, LoggedInNav } from "./styles/App";
-// import {SideNavBars} from './SideNavBars'
+import { useHistory} from "react-router-dom";
+
 
 export function LoggedInNavBar() {
+
+  const history = useHistory();
+
+  function logout(e) {
+    e.preventDefault();
+    localStorage.removeItem("token");
+    history.push("/login")
+  }
+
   return (
     <LoggedIn>
       {/* <SideNavBars /> */}
@@ -12,7 +22,7 @@ export function LoggedInNavBar() {
         <NavLinks>
           <NavLink to="/">Home</NavLink>
           <NavLink to="/Company">My Dashboard</NavLink>
-          <NavLink to="/login">Sign Up</NavLink>
+          <NavLink onClick={logout} to="/">Log Out</NavLink>
         </NavLinks>
       </LoggedInNav>
     </LoggedIn>

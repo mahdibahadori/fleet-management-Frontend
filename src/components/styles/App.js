@@ -152,9 +152,9 @@ export const AboutCollection = styled.div`
   display: flex;
   flex-direction: column;
   width: 80%;
-  height: 150px;
+  height: 100%;
   justify-content: space-between;
-  margin: 100px auto;
+  margin: 100px auto 50px;
 `;
 
 export const Card3 = styled.div`

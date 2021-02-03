@@ -1,6 +1,6 @@
 import React from "react";
 
-// import {Link} from 'react-router-dom'
+
 import { Nav, NavLink, NavLinks, Logo } from "./styles/App";
 
 export function LoggedOutNavbar() {
@@ -14,6 +14,7 @@ export function LoggedOutNavbar() {
         <NavLink to="/About">How It Works</NavLink>
         <NavLink to="/login">Sign In</NavLink>
         <NavLink to="/sign-up">Sign Up</NavLink>
+        <NavLink to="/Secrets">Secrets</NavLink>
       </NavLinks>
     </Nav>
   );
