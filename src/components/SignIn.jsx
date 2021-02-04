@@ -9,10 +9,13 @@ import {
 } from "./styles/Form";
 import { Footer } from "./Footer";
 
-export function SignIn({ history }) {
+
+export function SignIn({history}) {
+  
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errMessage, setErrMessage] = useState("");
+  let companyId = history.params.companyId
 
   async function onFormSubmit(event) {
     event.preventDefault();
@@ -20,13 +23,16 @@ export function SignIn({ history }) {
       auth: { email, password },
     };
     try {
-      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/login`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(body),
-      });
+      const response = await fetch(
+        `${process.env.REACT_APP_BACKEND_URL}/login`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(body),
+        }
+      );
       if (response.status >= 400) {
         throw new Error("incorrect credentials");
       } else {
@@ -34,6 +40,15 @@ export function SignIn({ history }) {
         localStorage.setItem("token", jwt);
         history.push("/");
       }
+      fetch(`${process.env.REACT_APP_BACKEND_URL}/companies/${companyId}`, {
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+        },
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          console.log(data);
+        });
     } catch (err) {
       setErrMessage(err.message);
     }

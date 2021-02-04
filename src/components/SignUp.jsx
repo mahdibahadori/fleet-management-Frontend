@@ -34,16 +34,16 @@ export function SignUp() {
     console.log(companies);
   };
 
-  function companyFinder(e) {
-    setCompanyId(e.target.id);
-  }
+  // function companyFinder(e) {
+  //   setCompanyId(e.target.id);
+  // }
 
   async function onFormSubmit(event) {
     event.preventDefault();
     console.log(companyId);
+    console.log(driverLicenseExpiry);
 
-    try {      
-
+    try {
       const response = await fetch(
         `${process.env.REACT_APP_BACKEND_URL}/sign-up`,
         {
@@ -66,11 +66,21 @@ export function SignUp() {
         }
       );
 
+      fetch(`${process.env.REACT_APP_BACKEND_URL}/companies/${companyId}`, {
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+        },
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          console.log(data);
+        });
+
       console.log(response);
       if (response.status >= 400) {
         throw new Error("incorrect credentials");
       } else {
-        history.push("/login");
+        history.push({pathname:"/login", companyId:companyId});
       }
     } catch (err) {
       console.log(err.message);
@@ -115,7 +125,7 @@ export function SignUp() {
             onChange={(e) => setDriverLicenseNumber(e.target.value)}
           />
         </FormGroup>
-        <FormGroup>          
+        <FormGroup>
           <FormLabel htmlFor="driverLicenseExpiry">
             Driver License Expiry
           </FormLabel>
@@ -171,7 +181,6 @@ export function SignUp() {
               const index = e.target.selectedIndex;
               const optionElement = e.target.childNodes[index];
               const id = optionElement.getAttribute("id");
-
               setCompanyName(e.target.value);
               setCompanyId(id);
             }}
