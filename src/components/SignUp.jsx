@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { LoggedOutNavbar } from "./LoggedOutNavbar";
 import {
   Form,
@@ -9,19 +9,41 @@ import {
   FormSelect,
 } from "./styles/Form";
 import { Footer } from "./Footer";
+import { useHistory } from "react-router-dom";
 
-export function SignUp({ history }) {
+export function SignUp() {
+  const history = useHistory();
+  const [companies, setCompanies] = useState([]);
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");  
+  const [password, setPassword] = useState("");
   const [userName, setUserName] = useState("");
   const [driverLicenseNumber, setDriverLicenseNumber] = useState("");
   const [driverLicenseExpiry, setDriverLicenseExpiry] = useState("");
   const [companyName, setCompanyName] = useState("");
-  const [driverId, setDriverId]= useState("")
+  const [companyId, setCompanyId] = useState(null);
+  const [driverId, setDriverId] = useState("");
+
+  useEffect(() => {
+    fetchCompanies();
+  }, []);
+
+  const fetchCompanies = async () => {
+    const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}/companies`);
+    const companies = await data.json();
+    setCompanies(companies);
+    console.log(companies);
+  };
+
+  function companyFinder(e) {
+    setCompanyId(e.target.id);
+  }
 
   async function onFormSubmit(event) {
     event.preventDefault();
-    try {
+    console.log(companyId);
+
+    try {      
+
       const response = await fetch(
         `${process.env.REACT_APP_BACKEND_URL}/sign-up`,
         {
@@ -29,24 +51,25 @@ export function SignUp({ history }) {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify({ user: { email, password } }),
+          body: JSON.stringify({
+            user: {
+              email: email,
+              password: password,
+              user_name: userName,
+              driver_license_number: driverLicenseNumber,
+              driver_license_expiry: driverLicenseExpiry,
+              company_name: companyName, // console.log(companyId)
+              driver_id: driverId,
+              company_id: companyId,
+            },
+          }),
         }
       );
+
+      console.log(response);
       if (response.status >= 400) {
         throw new Error("incorrect credentials");
       } else {
-        const response = await fetch(
-          `${process.env.REACT_APP_BACKEND_URL}/login`,
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({ auth: { email, password } }),
-          }
-        );
-        const { jwt } = await response.json();
-        localStorage.setItem("token", jwt);
         history.push("/login");
       }
     } catch (err) {
@@ -54,7 +77,6 @@ export function SignUp({ history }) {
     }
   }
 
-  const letters = ["A", "B", "C", "D"];
   return (
     <>
       <LoggedOutNavbar />
@@ -67,7 +89,7 @@ export function SignUp({ history }) {
         }}
       >
         Create an account
-      </h1>      
+      </h1>
       <Form onSubmit={onFormSubmit}>
         <FormGroup>
           <FormLabel htmlFor="userName">Username</FormLabel>
@@ -81,7 +103,9 @@ export function SignUp({ history }) {
           />
         </FormGroup>
         <FormGroup>
-          <FormLabel htmlFor="driverLicenseNumber">Driver License Number</FormLabel>
+          <FormLabel htmlFor="driverLicenseNumber">
+            Driver License Number
+          </FormLabel>
           <FormInput
             type="text"
             name="driverLicenseNumber"
@@ -91,10 +115,12 @@ export function SignUp({ history }) {
             onChange={(e) => setDriverLicenseNumber(e.target.value)}
           />
         </FormGroup>
-        <FormGroup>
-          <FormLabel htmlFor="driverLicenseExpiry">Driver License Expiry</FormLabel>
+        <FormGroup>          
+          <FormLabel htmlFor="driverLicenseExpiry">
+            Driver License Expiry
+          </FormLabel>
           <FormInput
-            type="text"
+            type="date"
             name="driverLicenseExpiry"
             id="driverLicenseExpiry"
             placeholder="1212121212"
@@ -105,7 +131,7 @@ export function SignUp({ history }) {
         <FormGroup>
           <FormLabel htmlFor="email">Email</FormLabel>
           <FormInput
-            type="date"
+            type="text"
             name="email"
             id="email"
             placeholder="maicon@email.com"
@@ -131,23 +157,33 @@ export function SignUp({ history }) {
             name="driverId"
             id="driverId"
             placeholder="111-11-1111"
-            value={password}
+            value={driverId}
             onChange={(e) => setDriverId(e.target.value)}
           />
         </FormGroup>
         <FormGroup>
           <FormLabel htmlFor="companyName">Company Name</FormLabel>
           <FormSelect
-            type="text"
             name="company"
             id="companyName"
             value={companyName}
-            onChange={(e) => setCompanyName(e.target.value)}
+            onChange={(e) => {
+              const index = e.target.selectedIndex;
+              const optionElement = e.target.childNodes[index];
+              const id = optionElement.getAttribute("id");
+
+              setCompanyName(e.target.value);
+              setCompanyId(id);
+            }}
           >
-            {letters.map((letter) => {
+            {companies.map((company) => {
               return (
-                <option key={letters.indexOf(letter)} value={letter}>
-                  {letter}
+                <option
+                  key={company.id}
+                  value={company.company_name}
+                  id={company.id}
+                >
+                  {company.company_name}
                 </option>
               );
             })}
